@@ -1,3 +1,0 @@
-[submodule "app/src/main/cpp/deps/orbslam3"]
-	path = app/src/main/cpp/deps/orbslam3
-	url = https://github.com/UZ-SLAMLab/ORB_SLAM3.git
