@@ -41,7 +41,7 @@ MESSAGE(${OpenCV_VERSION})
 
 set(EIGEN3_INCLUDE_DIR "../eigen-3.4.0")
 #find_package(Eigen3 3.1.0 REQUIRED)
-find_package(Pangolin REQUIRED)
+#find_package(Pangolin REQUIRED)
 #find_package(realsense2)
 
 include_directories(
@@ -50,7 +50,7 @@ ${PROJECT_SOURCE_DIR}/include
 ${PROJECT_SOURCE_DIR}/include/CameraModels
 ${PROJECT_SOURCE_DIR}/Thirdparty/Sophus
 ${EIGEN3_INCLUDE_DIR}
-${Pangolin_INCLUDE_DIRS}
+#${Pangolin_INCLUDE_DIRS}
 )
 
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
