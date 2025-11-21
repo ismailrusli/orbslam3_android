@@ -39,9 +39,10 @@ find_package(OpenCV 4.4 REQUIRED)
 MESSAGE("OPENCV VERSION:")
 MESSAGE(${OpenCV_VERSION})
 
-find_package(Eigen3 3.1.0 REQUIRED)
+set(EIGEN3_INCLUDE_DIR "../eigen-3.4.0")
+#find_package(Eigen3 3.1.0 REQUIRED)
 find_package(Pangolin REQUIRED)
-find_package(realsense2)
+#find_package(realsense2)
 
 include_directories(
 ${PROJECT_SOURCE_DIR}
@@ -127,14 +128,14 @@ ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so
 )
 
 # If RealSense SDK is found the library is added and its examples compiled
-if(realsense2_FOUND)
-    include_directories(${PROJECT_NAME}
-    ${realsense_INCLUDE_DIR}
-    )
-    target_link_libraries(${PROJECT_NAME}
-    ${realsense2_LIBRARY}
-    )
-endif()
+#if(realsense2_FOUND)
+#    include_directories(${PROJECT_NAME}
+#    ${realsense_INCLUDE_DIR}
+#    )
+#    target_link_libraries(${PROJECT_NAME}
+#    ${realsense2_LIBRARY}
+#    )
+#endif()
 
 
 ## Build examples
